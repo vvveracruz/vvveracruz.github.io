@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap'); /* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap'); /* Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Volkhov&display=swap'); /* Volkhov */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap'); /* Abril Fatface */
+
+body {
+  max-width: 30em;
+  margin: 0 auto;
+  padding: 5px;
+  font-family: 'Volkhov', serif;
+  font-size: 20px;
+  line-height: 30px;
+  background-color: #1a1a1a;
+  color: #f2f2f2;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  color: #a6a6a6;
+  margin-top: 1.5em;
+}
+
+h1 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 2.5em;
+  letter-spacing: 0.3em;
+}
+
+h2 {
+  font-size: 1.5em
+}
+
+h3 {
+    font-size: 1.25em
+}
+
+a {
+    text-decoration: none;
+    color: #cc9900;
+}
+
+a:visited {
+    color: #806000;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin-bottom: 4em
+}
