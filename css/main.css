@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap'); /* Roboto */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap'); /* Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); /* Open Sans */
 @import url('https://fonts.googleapis.com/css2?family=Volkhov&display=swap'); /* Volkhov */
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap'); /* Abril Fatface */
 
 body {
   max-width: 30em;
@@ -21,9 +20,10 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-family: 'Abril Fatface', cursive;
-  font-size: 2.5em;
-  letter-spacing: 0.3em;
+  font-size: 3em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-style: italic;
 }
 
 h2 {
@@ -31,22 +31,33 @@ h2 {
 }
 
 h3 {
-    font-size: 1.25em
+  font-size: 1.25em
 }
 
 a {
-    text-decoration: none;
-    color: #cc9900;
+  text-decoration: none;
+  color: #cc9900;
 }
 
 a:visited {
-    color: #806000;
+  color: #806000;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 section {
-    margin-bottom: 4em
+  margin-bottom: 4em
+}
+
+footer {
+  font-family: 'Open Sans', sans;
+  font-size: 0.7em;
+  font-weight: 700;
+  color: #a6a6a6;
+}
+
+.shadow {
+  text-shadow: 4px 4px 4px #0d0d0d;
 }
