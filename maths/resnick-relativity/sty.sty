@@ -1,0 +1,45 @@
+\ProvidesPackage{sty}
+%------------------------- packages ------------------------------
+\usepackage{
+    amsmath,    amssymb,    graphicx,   hyperref,
+    multicol,   dsfont,     subfiles,   enumitem,
+    tikz,       listings,   amsthm,     xcolor,
+    bigints,    tcolorbox,  gensymb,    siunitx
+}
+\usepackage[utf8]{inputenc}
+%----------------------- bibliography settings --------------------
+\usepackage[
+  backend = biber,
+  style = numeric
+]{biblatex}
+\addbibresource{references.bib}
+%--------------------------- hyperlinks --------------------------
+\hypersetup{
+    colorlinks,
+    linkcolor = blue,
+    urlcolor  = blue,
+    citecolor = blue,
+    anchorcolor = blue
+}
+
+%------------------ table of contents ---------------------------
+\setcounter{tocdepth}{1}
+
+%----------------------- latex commands --------------------------
+\newcommand{\ssref}[1]{$\S$\ref{#1}}    %   reference section
+\newcommand{\figref}[1]{Fig \ref{#1}}   %   reference figure
+
+%------------------ shorthand commands ---------------------------
+\newcommand{\Phisc}{\Phi_{\text{sc}}}   %   scattered field
+\newcommand{\Phiin}{\Phi_{\text{in}}}   %   incident field
+\newcommand{\Phitot}{\Phi_{\text{tot}}} %   total field
+\newcommand{\Phiout}{\Phi_{\text{out}}} %   total field
+\newcommand{\PPhi}[1]{\Phi_{\text{#1}}}
+
+%----------------- maths notation commands -----------------------
+\renewcommand{\Re}{\text{Re}}           %   Re
+\renewcommand{\Im}{\text{Im}}	        %   Im
+\renewcommand{\vec}[1]{\mathbf{#1}}	    %   bold vectors
+\newcommand{\bb}[1]{\mathbb{#1}}        %   R, C, Q... sets
+\newcommand{\partialfrac}[2]            %   partial derivs
+    {\frac{\partial #1}{\partial #2}}
