@@ -11,7 +11,3 @@
 *.run.xml
 *.synctex.gz
 *.toc
-
-*.tex
-*.bib
-*.sty
