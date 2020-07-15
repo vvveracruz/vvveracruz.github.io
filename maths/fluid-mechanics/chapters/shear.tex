@@ -10,6 +10,8 @@ where A is the area of the plate in contact with the fluid.
   \caption{A shear testing device (depicted in 2D).}
 \end{figure}
 
+%   ----    ----    SHEAR IN SOLIDS    ----    ----    %
+
 \subsection{Shear in solids}
 
 Consider the sample in our shear testing device is a solid, \figref{fig:shear-solids} shows the deformation after time $t'$. For any given shear $\tau$, the shear deformation is finite in solids. We can define a new quantity, shear strain $\lambda$, to measure this deformation:
@@ -29,6 +31,8 @@ We can derive the relationship between shear stress and strain experimentally. I
 \begin{equation}\label{eq:shear-in-solids}
   \tau = G \lambda
 \end{equation}
+
+%   ----    ----    SHEAR IN FLUIDS    ----    ----    %
 
 \subsection{Shear in fluids}
 
@@ -61,7 +65,14 @@ In particularly, for Newtonian fluids we find that this relationship is linear. 
   For a fluid with velocity $\vec{u} = (u,v,w)$, where $u$ is the velocity component in the direction of the shear stress,
 
   \begin{equation*}
-    \tau = \mu \frac{ d u }{ d y }
+    \tau = \mu \frac{ d u }{ d y }.
   \end{equation*}
-  
 \end{proposition}
+
+\begin{proof}
+  Consider our shear testing device as $\delta y \rightarrow 0$. Then,
+  \begin{equation*}
+    \tau = \lim_{\delta y \rightarrow 0} \frac{ d \lambda }{ dt } = \lim_{\delta y \rightarrow 0} \frac{ d }{ dt } \frac{ \Delta x }{ \delta y }
+  \end{equation*}
+  since we know that $\lambda = \Delta x / \delta y$
+\end{proof}
