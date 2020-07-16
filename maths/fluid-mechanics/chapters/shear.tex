@@ -12,11 +12,11 @@ where A is the area of the plate in contact with the fluid.
 
 %   ----    ----    SHEAR IN SOLIDS    ----    ----    %
 
-\subsection{Shear in solids}
+\section{Shear in solids}
 
 Consider the sample in our shear testing device is a solid, \figref{fig:shear-solids} shows the deformation after time $t'$. For any given shear $\tau$, the shear deformation is finite in solids. We can define a new quantity, shear strain $\lambda$, to measure this deformation:
 
-\begin{equation}
+\begin{equation} \label{eq:shear-strain-defn}
   \lambda = \frac{ \Delta x }{ \delta y }
 \end{equation}
 
@@ -28,13 +28,13 @@ Consider the sample in our shear testing device is a solid, \figref{fig:shear-so
 
 We can derive the relationship between shear stress and strain experimentally. In fact, it turns out they are related linearly. We call the constant of proportionality the \textit{shear modulus}, $G$, and it is dependent on the material.
 
-\begin{equation}\label{eq:shear-in-solids}
+\begin{equation} \label{eq:shear-in-solids}
   \tau = G \lambda
 \end{equation}
 
 %   ----    ----    SHEAR IN FLUIDS    ----    ----    %
 
-\subsection{Shear in fluids}
+\section{Shear in fluids}
 
 In comparison to the behaviour in solids, when a continuous shear stress is applied to a fluid it continues to deform indefinitely, assuming there are no counteracting forces. We can define what a fluid is according to this behaviour.
 
@@ -57,9 +57,11 @@ Experimentally, we find that
 
 In particularly, for Newtonian fluids we find that this relationship is linear. We call the constant of proportionality the \textit{absolute} or \textit{dynamic viscosity}, $\mu$.
 
-\begin{equation} \label{eq:shear-stress-strain-in-liquids}
+\begin{equation} \label{eq:newtons-law-of-viscosity-lambda}
   \tau = \mu \frac{ d \lambda }{ d t }
 \end{equation}
+
+This is known as Newton's Law of Viscosity.
 
 \begin{proposition}
   For a fluid with velocity $\vec{u} = (u,v,w)$, where $u$ is the velocity component in the direction of the shear stress,
@@ -70,9 +72,17 @@ In particularly, for Newtonian fluids we find that this relationship is linear. 
 \end{proposition}
 
 \begin{proof}
-  Consider our shear testing device as $\delta y \rightarrow 0$. Then,
-  \begin{equation*}
-    \tau = \lim_{\delta y \rightarrow 0} \frac{ d \lambda }{ dt } = \lim_{\delta y \rightarrow 0} \frac{ d }{ dt } \frac{ \Delta x }{ \delta y }
-  \end{equation*}
-  since we know that $\lambda = \Delta x / \delta y$
+  First recall the definition of shear strain $\lambda$ \eqref{eq:shear-strain-defn}, so we have
+
+  \begin{equation}
+    \tau = \mu \frac{d}{ dt } \frac{ \Delta x }{ \delta y }.
+  \end{equation}
+
+  We know that $\delta y$ is a constant, so
+
+  \begin{equation}
+    \tau = \mu \frac{1 }{ \delta y } \Delta \left(\frac{ dx }{ dt }\right) = \mu \frac{ \Delta u }{ \delta y } = \mu \frac{ du }{ dy }.
+  \end{equation}
+
+  A more formal proof can be given by considering the limit of this expression as $\delta y \rightarrow 0$.
 \end{proof}

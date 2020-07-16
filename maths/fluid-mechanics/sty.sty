@@ -30,12 +30,14 @@
 \newenvironment{solution}[1]{\par\medskip\noindent \textbf{Solution}. #1\rmfamily}
 
 %   maths environments
-\newtheorem{thm}{Theorem}[section]      %   theorem
-\newtheorem{definition}[thm]{Definition}      %   definition
-\newtheorem{proposition}[thm]{Proposition}    %   proposition
-\newtheorem{hypothesis}[thm]{Hypothesis}%   hypothesis
-\newtheorem{law}[thm]{Law}              %   law
-\newtheorem{assumption}{Assumption}%   assumption
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{remark}[theorem]{Remark}
 
 %------------------ table of contents ---------------------------
 \setcounter{tocdepth}{1}
@@ -43,13 +45,6 @@
 %----------------------- latex commands --------------------------
 \newcommand{\ssref}[1]{$\S$\ref{#1}}    %   reference section
 \newcommand{\figref}[1]{Fig \ref{#1}}   %   reference figure
-
-%------------------ shorthand commands ---------------------------
-\newcommand{\Phisc}{\Phi_{\text{sc}}}   %   scattered field
-\newcommand{\Phiin}{\Phi_{\text{in}}}   %   incident field
-\newcommand{\Phitot}{\Phi_{\text{tot}}} %   total field
-\newcommand{\Phiout}{\Phi_{\text{out}}} %   total field
-\newcommand{\PPhi}[1]{\Phi_{\text{#1}}}
 
 %----------------- maths notation commands -----------------------
 \renewcommand{\Re}{\text{Re}}           %   Re
