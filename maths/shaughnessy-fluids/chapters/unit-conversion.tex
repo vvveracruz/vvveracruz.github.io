@@ -1,15 +1,29 @@
 \begin{table}[h]
-  \centering
-  \label{table:length-convrsion}
-
-  \begin{tabular}{ | c | c | c |}
-    \hline
-              &   foot    &   inch  \\
-    \hline
-    1 foot =  &   1       &   12    \\
-    1 inch =  &   1/12    &   1     \\
-    \hline
-  \end{tabular}
-
+  \label{table:length-conversion}
   \caption{Length}
+
+  \begin{threeparttable}
+    \[
+    \begin{array}{ r|ccccccc }
+      \toprule
+              &  \si{mm}      & \si{cm}   & \si{m}    & \si{km}         &\si{in}&\si{ft}& \si{mile} \\
+      \midrule
+      1 \si{mm}    = &1       & -         & -         & -               & -     & -     & - \\
+      1 \si{cm}    = &\mathbf{10}      & 1         & -         & -               & -     & -     & - \\
+      1 \si{m}     = &10^3    & \mathbf{100}       & 1         & -               & -     & -     & - \\
+      1 \si{km}    = &10^6    & 10^{5}    & \mathbf{10^{3}}    & 1               & -     & -     & - \\
+      1 \si{in}    = &25.4    & 2.54      & 0.0254    & \mathbf{2.54 \x10^{-5}}  & 1     & -     & - \\
+      1 \si{ft}    = &304.8   & 30.48     & 0.3048    & 3.048 \x10^{-4} & \mathbf{1/12}  & 1     & - \\
+      1 \si{mile}  = &1609344 & 160934.4  & 1609.344  & 1.609344        & 63360 & \mathbf{5280}  & 1 \\
+      \bottomrule
+    \end{array}
+    \]
+
+    \begin{tablenotes}
+      \small
+      \item The missing conversions can be calculated by taking the inverse of the ones given.
+      \item The numbers in bold are the most relevant conversions -- everything else can be derived from these.
+    \end{tablenotes}
+  \end{threeparttable}
+
 \end{table}
