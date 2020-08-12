@@ -24,7 +24,7 @@
 %--------------------- environments ------------------------------
 %   question environment
 \newcounter{question}[section]
-\newenvironment{question}[1]{\bfseries \refstepcounter{question}\par\medskip
+\newenvironment{question}[1]{~\\ \bfseries \refstepcounter{question}\par\medskip
    \noindent Q\thequestion. #1\rmfamily}
 
 \newenvironment{solution}[1]{\par\medskip\noindent \textbf{Solution}. #1\rmfamily}
