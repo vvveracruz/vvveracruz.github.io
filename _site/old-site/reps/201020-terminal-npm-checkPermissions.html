@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Your awesome title" />
+    <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Your awesome title | Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Your awesome title" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
+<meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
+<link rel="canonical" href="http://localhost:4000/old-site/reps/201020-terminal-npm-checkPermissions.html" />
+<meta property="og:url" content="http://localhost:4000/old-site/reps/201020-terminal-npm-checkPermissions.html" />
+<meta property="og:site_name" content="Your awesome title" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/old-site/reps/201020-terminal-npm-checkPermissions.html","headline":"Your awesome title","description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","@type":"WebPage","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+  <body>
+    <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title"></h1>
+  </header>
+
+  <div class="post-content">
+    <p>Problem:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm WARN checkPermissions Missing write access to /usr/local/lib/node_modules
+npm ERR! code EACCES
+npm ERR! syscall access
+npm ERR! path /usr/local/lib/node_modules
+npm ERR! errno -13
+npm ERR! Error: EACCES: permission denied, access '/usr/local/lib/node_modules'
+npm ERR!  [Error: EACCES: permission denied, access '/usr/local/lib/node_modules'] {
+npm ERR!   errno: -13,
+npm ERR!   code: 'EACCES',
+npm ERR!   syscall: 'access',
+npm ERR!   path: '/usr/local/lib/node_modules'
+npm ERR! }
+npm ERR!
+npm ERR! The operation was rejected by your operating system.
+npm ERR! It is likely you do not have the permissions to access this file as the current user
+npm ERR!
+npm ERR! If you believe this might be a permissions issue, please double-check the
+npm ERR! permissions of the file and its containing directories, or try running
+npm ERR! the command again as root/Administrator.
+</code></pre></div></div>
+
+<p>Solution:</p>
+<ul>
+  <li>check who owns the directory <code class="language-plaintext highlighter-rouge">ls -la /usr/local/lib/node_modules</code></li>
+  <li>in my case this was <code class="language-plaintext highlighter-rouge">root</code></li>
+  <li>double check what your user is <code class="language-plaintext highlighter-rouge">whoami</code></li>
+  <li>change owner to yourself <code class="language-plaintext highlighter-rouge">sudo chown -R veracruz: /usr/local/lib/node_modules</code></li>
+</ul>
+
+  </div>
+
+</article>
+
+  </body>
+</html>

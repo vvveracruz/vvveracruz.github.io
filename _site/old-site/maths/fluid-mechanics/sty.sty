@@ -1,0 +1,68 @@
+\ProvidesPackage{sty}
+%------------------------- packages ------------------------------
+\usepackage{
+    amsmath,    amssymb,    graphicx,   hyperref,
+    multicol,   dsfont,     subfiles,   enumitem,
+    tikz,       listings,   amsthm,     xcolor,
+    bigints,    tcolorbox,  gensymb,    siunitx
+}
+\usepackage[utf8]{inputenc}
+%----------------------- bibliography settings --------------------
+\usepackage[
+  backend = biber,
+  style = numeric
+]{biblatex}
+\addbibresource{references.bib}
+%--------------------------- hyperlinks --------------------------
+\hypersetup{
+    colorlinks,
+    linkcolor = black,
+    urlcolor  = blue,
+    citecolor = blue,
+    anchorcolor = blue
+}
+%--------------------- environments ------------------------------
+%   question environment
+\newcounter{question}[section]
+\newenvironment{question}[1]{\bfseries \refstepcounter{question}\par\medskip
+   \noindent Q\thequestion. #1\rmfamily}
+
+\newenvironment{solution}[1]{\par\medskip\noindent \textbf{Solution}. #1\rmfamily}
+
+%   maths environments
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{remark}[theorem]{Remark}
+
+\newenvironment{custom-thm}[1]{\par\medskip\noindent \refstepcounter{theorem} \textbf{#1 \thetheorem.} \it \rmfamily}
+
+\makeatletter
+\def\th@plain{%
+  \thm@notefont{}% same as heading font
+  \itshape % body font
+}
+\def\th@definition{%
+  \thm@notefont{}% same as heading font
+  \normalfont % body font
+}
+\makeatother
+
+%------------------ table of contents ---------------------------
+\setcounter{tocdepth}{1}
+
+%----------------------- latex commands --------------------------
+\newcommand{\ssref}[1]{$\S$\ref{#1}}    %   reference section
+\newcommand{\figref}[1]{Fig \ref{#1}}   %   reference figure
+
+%----------------- maths notation commands -----------------------
+\renewcommand{\Re}{\text{Re}}           %   Re
+\renewcommand{\Im}{\text{Im}}	        %   Im
+\renewcommand{\vec}[1]{\mathbf{#1}}	    %   bold vectors
+\newcommand{\bb}[1]{\mathbb{#1}}        %   R, C, Q... sets
+\newcommand{\partialfrac}[2]            %   partial derivs
+    {\frac{\partial #1}{\partial #2}}

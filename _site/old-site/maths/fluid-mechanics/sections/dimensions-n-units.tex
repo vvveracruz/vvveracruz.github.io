@@ -1,0 +1,85 @@
+\section{An important aside on dimensions and units}
+
+But what is the difference between a dimension and a unit?
+
+\begin{definition}
+  A dimension is a physical variable used to specific some charactersitics of a system. For example, length, mass and temperature are all dimensions.
+\end{definition}
+
+\begin{definition}
+  A unit is a particular amount of a physical quantity or dimension. For example, leagues is a (pretty bad) unit of length, micrograms is a unit of mass and degrees Centigrade is a unit of temperature.
+\end{definition}
+
+The dimensions of length $[L]$, time $[t]$ and temperature $[T]$ are considered to be base dimensions and are included in all dimension sets. A dimension set of the form $[MLtT]$ or $[FLtT]$ describe most problems in fluid mechanics. Other fields might require more dimensions, for example charge.
+
+What unit set we choose will dictate how we understand the laws of physics. Consider
+\begin{equation}
+  \vec{F} \propto M \vec{a}
+\end{equation}
+in the usual notation. The proportionality symbol is required because there is no a priori reason to assume that the units of measure will automatically be consistent with $\vec{F} = M \vec{a}$. More generally we write
+\begin{equation}
+  \vec{F} = \frac{M \vec{a}}{g_c},
+\end{equation}
+where $g_c$ will be determined by our choice of units. However the underlying dimensisonal relationship \textit{is} true a priori:
+\begin{equation}
+  [F] = [M][Lt^{-2}].
+\end{equation}
+
+\subsection*{Système International d'Unités (SI)}
+
+This is an $[MLtT]$ system, meaning units for mass, length, time and temperature are all indepedentenly defined:
+\begin{itemize}
+  \item mass: kilogram (kg),
+  \item length: metre (m),
+  \item time: second (s),
+  \item temperature: Kelvin (K).
+\end{itemize}
+
+The SI system also has a composite unit for force, the Newton:
+
+\begin{equation*}
+  1 \si{.N} = 1 \si{.kg.m.s^{-2}}.
+\end{equation*}
+
+The SI system has ben defined so that $g_c$ and many other proportionality constants (including Fourier's Law and Gauss' Law) are dimensionless constants of unit magnitude. You are welcome.
+
+\subsection*{Centimetre-gram-second system (cgs)}
+
+This is a ripoff of the SI system but for smaller stuff which wouldn't make sense to measure in such large units as the metre and the kilogram:
+\begin{itemize}
+  \item mass: gram (g),
+  \item length: centimetre (cm),
+  \item time: second (s),
+  \item temperature: Kelvin (K).
+\end{itemize}
+
+\subsection*{British Gravitational Unit System (BG)}
+
+This is a $[FLtT]$ system:
+\begin{itemize}
+  \item force: pound force (\si{lb_f}),
+  \item length: foot (ft),
+  \item time: second (s),
+  \item temperature: degree Rakine (ºR).
+\end{itemize}
+
+The BG system also has a composite unit, but this time for mass, which is defined in such a way that allows for $g_c=1$:
+
+\begin{equation*}
+  1 \text{ slug} = 1 \si{lb_f.s^2.ft^{-1}},
+\end{equation*}
+
+and the weight of 1 slug is 32.2 \si{lb_f}, which is in no way a silly thing to name a unit.
+
+\subsection*{English Engineering Unit System (EE)}
+
+This is an $[FMLtT]$ system and where good, sane, ways of measuring things to die:
+\begin{itemize}
+  \item force: pound force (\si{lb_f}),
+  \item force: pound mass (\si{lb_m}),
+  \item length: foot (ft),
+  \item time: second (s),
+  \item temperature: degree Rakine (ºR).
+\end{itemize}
+
+The force unit is of course arbitrarily defined so that 1 \si{lb_m} weights 1 \si{lb_f} when acted upon by gravity at sea level. In this case we have $g_c = 32.2 $. Fun fact: none of this makes any sense.
