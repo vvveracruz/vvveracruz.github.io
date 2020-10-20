@@ -8,3 +8,4 @@ layout: landing
 ## [Github](https://www.github.com/vvveracruz)
 ## [Twitter](https://www.twitter.com/vvveracruz)
 ## [Email](mailto:me@vgg.cz)
+## [Maths Hub](/maths.html)
