@@ -1,7 +1,0 @@
-@import "main.css";
-
-h2, h3 {
-  text-shadow: 4px 4px 4px var(--colour-shadow);
-  font-weight: 800;
-  font-style: italic;
-}
