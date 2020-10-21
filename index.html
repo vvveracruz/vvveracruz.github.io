@@ -1,0 +1,8 @@
+---
+title: Links
+layout: landing
+---
+
+{% for item in site.data.links %}
+  <h1><a href="{{item.url}}" alt="{{item.title}}">{{item.title}}</a></h1>
+{% endfor %}

@@ -1,0 +1,7 @@
+.category-tag{
+  background: var(--colour-shadow);
+  font-family: var(--font-sans-main), sans-serif;
+  color: var(--colour-grey);
+  border-radius: 7px;
+  padding: 5px;
+}
