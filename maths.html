@@ -8,8 +8,10 @@ title: Maths Hub
 
   <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 
-  {% include tagbar.html %}
+  <p>{{ post.summary }}</p>
 
-  {{ post.excerpt }}
+  <p>{% include tagbar.html %}</p>
+
+  <br>
 
 {% endfor %}

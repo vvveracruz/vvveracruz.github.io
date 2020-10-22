@@ -1,3 +1,9 @@
+{% for category in site.categories %}
+  {% if page.category == category[0] %}
+    <mark class="category-tag"><a href="{% link maths.html %}">{{ category[0] | capitalize }}</a></mark></b>
+  {% endif %}
+{% endfor %}
+
 {% if post.wip %}
   <b><mark class="category-tag">WIP</mark></b>
 {% endif %}

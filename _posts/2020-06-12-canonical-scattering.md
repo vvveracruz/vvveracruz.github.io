@@ -1,27 +1,13 @@
 ---
 layout: post
-title:  "Degree project: canonical scattering problems"
+title:  "Canonical scattering problems"
 date:   2020-06-12 00:00:00 +0100
 category: maths
+tags: wave-motion, physics, Bessel-equations, python
 repo: https://github.com/vvveracruz/canonical-scattering
-wip: true
+summary: "My final year undergraduate project on wave motion."
 ---
 
-My third year undergraduate project was on solving canonical scattering problems using Bessel Equations and modelling this behaviour using python.
+My third year undergraduate project was on solving canonical scattering problems using Bessel Equations and modelling this behaviour using python. A quick overview of what this entailed can be seen in the slides below. [The full report is available here.](assets/pdf-slides.pdf) Both of these (and the somewhat messy Python code) are available in the repo, too.
 
-$$
-\begin{aligned}
-  & \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
-  = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
-  & (x_1, \ldots, x_n) \left( \begin{array}{ccc}
-      \phi(e_1, e_1) & \cdots & \phi(e_1, e_n) \\
-      \vdots & \ddots & \vdots \\
-      \phi(e_n, e_1) & \cdots & \phi(e_n, e_n)
-    \end{array} \right)
-  \left( \begin{array}{c}
-      y_1 \\
-      \vdots \\
-      y_n
-    \end{array} \right)
-\end{aligned}
-$$
+<embed src="assets/pdf/csp-slides.pdf" type="application/pdf" width="100%" height="600px"/>
