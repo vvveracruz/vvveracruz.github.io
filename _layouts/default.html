@@ -1,12 +1,22 @@
 <!doctype html>
 <html>
 
-  {% include header.html %}
+  <head>
 
+    {% include basic-head.html %}
+    
+    {% include nav.html%}
+
+  </head>
   <body>
+
+    <h1 class="page-title">{{ page.title }}</h1>
     {{ content }}
+
   </body>
+  <footer>
 
-  {% include footer.html %}
+    {% include basic-footer.html %}
 
+  </footer>
 </html>

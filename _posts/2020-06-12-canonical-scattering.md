@@ -5,6 +5,7 @@ date:   2020-06-12 00:00:00 +0100
 category: maths
 tags: wave-motion, physics, Bessel-equations, python
 repo: https://github.com/vvveracruz/canonical-scattering
+repo_name: "Github repo"
 summary: "My final year undergraduate project on wave motion."
 ---
 

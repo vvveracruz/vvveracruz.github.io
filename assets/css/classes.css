@@ -4,4 +4,31 @@
   color: var(--colour-grey);
   border-radius: 7px;
   padding: 5px;
+  font-size: 0.9em;
+  font-weight: 900;
+}
+
+.navigation{
+  background: var(--colour-shadow);
+  font-family: var(--font-sans-main), sans-serif;
+  color: var(--colour-grey);
+  padding: 10px;
+  text-align: center;
+  word-spacing: 20px;
+  font-family: var(--font-sans), sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.page-title{
+  text-shadow: 4px 4px 4px var(--colour-shadow);
+  font-weight: 800;
+  padding: 10px 10px 10px 0px;
+  font-size: 2.5em;
+}
+
+.language-plaintext{
+  font-family: 'Space Mono';
+  color: var(--colour-grey);
+  text-shadow: 1px 1px 1px var(--colour-shadow);
 }

@@ -1,44 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap'); /* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700;800;900&display=swap'); /* Roboto */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); /* Open Sans */
 @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,700;1,400&display=swap'); /* Bitter */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap'); /* Work Sans */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import "classes.css";
 
 :root {
   --font-serif: 'Bitter';
   --font-sans-main: 'Roboto';
-  --font-sans: 'Open Sans';
+  --font-sans: 'Work Sans';
   --colour-grey: #999999;
   --colour-white: #cccccc;
-  --colour-shadow: #0d0d0d;
+  --colour-shadow: #1a1a1a;
   --colour-orange-light: #cc9900;
   --colour-orange-dark: #806000;
-  --colour-background-grey: #1a1a1a;
+  --colour-background-grey: #313338;
 }
 
 body {
   max-width: 40em;
-  margin: 0 auto;
-  font-family: var(--font-serif), serif;
+  margin: auto;
+  font-family: var(--font-sans), serif;
   background-color: var(--colour-background-grey);
   color: var(--colour-white);
+  font-size: 1.15em;
+  line-height: 1.4em;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-sans-main), sans-serif;
-  color: var(--colour-grey);
-  font-weight: 800;
+  color: var(--colour-white);
+  font-weight: 700;
 }
 
 a {
   text-decoration: none;
-  color: var(--colour-orange-light);
-}
-
-a:visited {
-  color: var(--colour-orange-dark);
+  color: inherit;
 }
 
 a:hover {
+  color: var(--colour-orange-dark);
   text-decoration: underline;
 }
 
@@ -58,14 +59,6 @@ hr {
   border-width: 1px;
 }
 
-/*--- --- C L A S S E S --- ---*/
-
-.shadow {
-  text-shadow: 4px 4px 4px #0d0d0d;
-}
-
-.story-date {
-  text-shadow: 4px 4px 4px #0d0d0d;
-  font-color: var(--colour-grey);
-  font-family: var(--font-sans-main);
+p + ul, p + ol {
+    margin-top: -1em; /* this removes the blank vertical space between lists and paragraphs */
 }

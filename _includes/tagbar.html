@@ -4,14 +4,6 @@
   {% endif %}
 {% endfor %}
 
-{% if post.wip %}
-  <b><mark class="category-tag">WIP</mark></b>
-{% endif %}
-
-{% if page.wip %}
-  <b><mark class="category-tag">WIP</mark></b>
-{% endif %}
-
 {% if post.date %}
   <mark class="category-tag">{{post.date | date_to_string}}</mark>
 {% endif %}
@@ -20,8 +12,16 @@
 <mark class="category-tag">{{page.date | date_to_string}}</mark>
 {% endif %}
 
+{% if post.wip %}
+  <b><mark class="category-tag">WIP</mark></b>
+{% endif %}
+
+{% if page.wip %}
+  <b><mark class="category-tag">WIP</mark></b>
+{% endif %}
+
 {% if post.repo %}
-  <mark class="category-tag"><a href="{{post.repo}}">Link to repo</a></mark>
+  <mark class="category-tag"><a href="{{post.repo}}">{{ post.repo_name}}</a></mark>
 {% endif %}
 
 {% if page.repo %}
