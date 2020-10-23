@@ -3,6 +3,12 @@
 code {
   font-family: 'Space Mono';
   font-size: 0.9em;
+  text-shadow: 1px 1px 1px var(--colour-shadow);
+}
+
+.highlight {
+  font-family: 'Space Mono';
+  font-size: 0.85em;
 }
 
 .highlight pre { background-color: inherit; }

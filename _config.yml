@@ -1,18 +1,23 @@
 title: VGG.CZ
 email: me@vgg.cz
+
 description: >- # this means to ignore newlines until "baseurl:"
   My personal website.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://vgg.cz" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: vvveracruz
-github_username:  vvveracruz
+baseurl: ""
+url: "https://vgg.cz"
 
-permalink: /:title
+github_username:  vvveracruz
+repo: https://github.com/vvveracruz/vvveracruz.github.io
 
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+
+
+# build settings
+
+permalink: /:title
 
 markdown: kramdown
 highlighter: rouge

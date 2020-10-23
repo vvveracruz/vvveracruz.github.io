@@ -7,6 +7,7 @@ tags: wave-motion, physics, Bessel-equations, python
 repo: https://github.com/vvveracruz/canonical-scattering
 repo_name: "Github repo"
 summary: "My final year undergraduate project on wave motion."
+nav: false
 ---
 
 My third year undergraduate project was on solving canonical scattering problems using Bessel Equations and modelling this behaviour using python. A quick overview of what this entailed can be seen in the slides below. [The full report is available here.](assets/pdf-slides.pdf) Both of these (and the somewhat messy Python code) are available in the repo, too.
