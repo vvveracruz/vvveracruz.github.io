@@ -4,17 +4,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap'); /* Work Sans */
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import "classes.css";
+@import "code-highlight.css";
 
 :root {
   --font-serif: 'Bitter';
   --font-sans-main: 'Roboto';
   --font-sans: 'Work Sans';
   --colour-grey: #999999;
-  --colour-white: #cccccc;
+  --colour-white: #f8f8f2;
   --colour-shadow: #1a1a1a;
   --colour-orange-light: #cc9900;
   --colour-orange-dark: #806000;
   --colour-background-grey: #313338;
+  --colour-background-dark: #2f3137;
 }
 
 body {
