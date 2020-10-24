@@ -24,5 +24,6 @@
   text-shadow: 4px 4px 4px var(--colour-shadow);
   font-weight: 800;
   padding: 10px 10px 10px 0px;
+  line-height: normal;
   font-size: 2.9em
 }
