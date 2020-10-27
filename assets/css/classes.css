@@ -8,6 +8,10 @@
   font-weight: 900;
 }
 
+.post-content a {
+  text-decoration: underline;
+}
+
 .navigation{
   background: var(--colour-shadow);
   font-family: var(--font-sans-main), sans-serif;

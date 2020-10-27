@@ -4,11 +4,13 @@ code {
   font-family: 'Space Mono';
   font-size: 0.9em;
   text-shadow: 1px 1px 1px var(--colour-shadow);
+  color: var(--colour-grey-light);
 }
 
 .highlight {
   font-family: 'Space Mono';
   font-size: 0.85em;
+  color: var(--colour-white);
 }
 
 .highlight pre { background-color: inherit; }

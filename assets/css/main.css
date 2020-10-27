@@ -11,6 +11,7 @@
   --font-sans-main: 'Roboto';
   --font-sans: 'Work Sans';
   --colour-grey: #999999;
+  --colour-grey-light: #cfcfc9;
   --colour-white: #f8f8f2;
   --colour-shadow: #1a1a1a;
   --colour-orange-light: #cc9900;
@@ -43,17 +44,6 @@ a {
 a:hover {
   color: var(--colour-orange-dark);
   text-decoration: underline;
-}
-
-section {
-  margin-bottom: 4em;
-}
-
-footer {
-  font-family: var(--font-sans), sans;
-  font-size: 0.7em;
-  font-weight: 700;
-  color: var(--colour-grey);
 }
 
 hr {
