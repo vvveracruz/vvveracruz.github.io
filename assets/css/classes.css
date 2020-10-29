@@ -14,12 +14,11 @@
 
 .navigation{
   background: var(--colour-shadow);
-  font-family: var(--font-sans-main), sans-serif;
+  font-family: var(--font-sans-alt), sans-serif;
   color: var(--colour-grey);
   padding: 10px;
   text-align: center;
   word-spacing: 20px;
-  font-family: var(--font-sans), sans-serif;
   text-transform: uppercase;
   font-weight: 700;
 }
