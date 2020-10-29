@@ -316,8 +316,16 @@ In short though, we need some new directories. Jekyll's magic ✨ really shines 
 
 You can download these directly from [their Github repo][12]. We only need `_includes` and `_layouts`. We are going to need to rewrite these to make use of the bootstrap framework so don't get too attached to them.
 
-### Structure of a
+_____
 
+## All links
+- [CDNs – Wikpedia][1]
+- [How to jekyll step by step][2]
+- [Jekyll installation guide][3]
+- [Reference tutorial on experimentingwithcode.com][4]
+- [Jekyll: converting a gem theme into a regular theme][5]
+- [Github Pages][6]
+- 
 
 
 [1]: https://en.wikipedia.org/wiki/Content_delivery_network "CDNs -- Wikipedia"
