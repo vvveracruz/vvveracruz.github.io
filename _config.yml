@@ -18,6 +18,8 @@ plugins:
 # build settings
 
 permalink: /:title
+sass:
+  sass_dir: /assets/css/
 
 markdown: kramdown
 highlighter: rouge
