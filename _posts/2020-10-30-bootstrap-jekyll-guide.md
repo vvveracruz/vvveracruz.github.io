@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Bootstrap and Jekyll tutorial"
+title:  "Bootstrap and Jekyll: a guide for the perplexed"
 date:   2020-10-30 00:00:00 +0100
 category: maths
 tags: web-dev, html, css, bootstrap, jekyll
@@ -8,9 +8,6 @@ summary: "A not so quick guide on setting up a bootstrap and Jekyll site"
 repo: https://github.com/vvveracruz/jekyll-bootstrap-example-site
 repo_name: Github repos
 ---
-
-# Bootstrap and Jekyll: a guide for the perplexed
-
 This tutorial will walk you through how to create and maintain a Jekyll site using Bootstrap. Some of this tutorial is an updated and revised version of [this blog post on experimentingwithcode.com][4], and the rest has been hacked together by me. I am not a web dev expert, so I _will_ explain everything in excruciating detail. If you are, this is going to be too much information. Sorry.
 
 #### Overview
@@ -144,7 +141,8 @@ Now create files and directories until your site looks like this:
 
 We'll also start with a very basic Index file. You can just copy and paste this into it. (PS this is totally a slightly modified version of [the beginner example on the bootstrap website.][7])
 
-{% highlight html %}
+```html
+{% raw %}
 <!doctype html>
 <html lang="en">
   <head>
@@ -160,7 +158,8 @@ We'll also start with a very basic Index file. You can just copy and paste this 
 
   </body>
 </html>
-{% endhighlight %}
+{% endraw %}
+```
 
 ### Downloading bootstrap source files
 
@@ -473,7 +472,8 @@ layout: default
 You can download the site we've built here [on my Github][19]. The next few steps would be to start creating posts and to figure out where to host your site. For the first, you can follow [the step by step tutorial on the Jekyll site][2]. For the second, I cannot recommend [Github Pages][6] enough.
 
 I might make posts on these in the future, so [follow me on Twitter][20] if you're interested 😉
-_____
+
+---
 
 ## All links
 - [CDNs – Wikpedia][1]
