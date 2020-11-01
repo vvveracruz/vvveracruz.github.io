@@ -2,7 +2,7 @@
 layout: post
 title:  "NY Citibike dashboard with SQL and Datastudio"
 date:   2020-10-28 00:00:00 +0100
-category: maths
+category: data
 tags: sql, data
 summary: "A SQL and datastudio project to visualise data from the New York Citibike public data set on Big Query."
 wip: true

@@ -2,7 +2,7 @@
 layout: post
 title:  "Bootstrap and Jekyll: a guide for the perplexed"
 date:   2020-10-30 00:00:00 +0100
-category: maths
+category: compsci
 tags: web-dev, html, css, bootstrap, jekyll
 summary: "A not so quick guide on setting up a bootstrap and Jekyll site"
 repo: https://github.com/vvveracruz/jekyll-bootstrap-example-site
