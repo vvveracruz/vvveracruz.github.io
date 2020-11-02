@@ -1,7 +1,23 @@
 ---
-title: Home
 ---
 
-{% for item in site.data.links %}
-  <h1><a href="{{item.url}}" alt="{{item.title}}">{{item.title}}</a></h1>
-{% endfor %}
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+
+    <title>VGG.CZ</title>
+
+  </head>
+  <body>
+    <div class="container">
+
+      {% for item in site.data.links %}
+        <h1><a href="{{item.url}}" alt="{{item.title}}">{{item.title}}</a></h1>
+      {% endfor %}
+      
+    </div>
+
+    {% include foot-js.html %}
+  </body>
+</html>

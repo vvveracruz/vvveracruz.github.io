@@ -1,8 +1,17 @@
-<div class="nav-scroller py-1 mb-2">
-  <nav class="nav d-flex justify-content-between">
-      <a class="p-2 text-muted" href="\">Home</a>
-    {% for category in site.categories %}
-      <a class="p-2 text-muted" href={{ category.url }}> {{ category.name | capitalize}}</a>
-    {% endfor %}
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded">
+    <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
+      <ul class="navbar-nav">
+
+        <li class="nav-item active">
+          <a class="nav-link" href="\home">HOME</a>
+        </li>
+
+        {% for category in site.categories %}
+          <li class="nav-item active">
+            <a class="nav-link" href="{{ category.url }}">{{ category.name | upcase }}</a>
+          </li>
+        {% endfor %}
+
+      </ul>
+    </div>
   </nav>
-</div>

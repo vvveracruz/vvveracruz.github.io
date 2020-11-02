@@ -1,6 +1,6 @@
 ---
 name: data
-layout: default
+layout: page
 ---
 # Data posts
 

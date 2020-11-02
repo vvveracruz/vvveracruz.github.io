@@ -1,6 +1,6 @@
 ---
 name: maths
-layout: default
+layout: page
 ---
 # Maths posts
 

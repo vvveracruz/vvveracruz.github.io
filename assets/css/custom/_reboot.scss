@@ -2,3 +2,7 @@ body {
   max-width: $body-max-width;
   margin: $body-margin;
 }
+
+.post-content a {
+  text-decoration: $link-body-decoration;
+}

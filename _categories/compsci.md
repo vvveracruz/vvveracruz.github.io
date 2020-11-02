@@ -1,6 +1,6 @@
 ---
 name: compsci
-layout: default
+layout: page
 ---
 # Compsci posts
 
