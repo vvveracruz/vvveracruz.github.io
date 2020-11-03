@@ -10,6 +10,7 @@
 $white:                   #fff !default;
 $gray-600:                #6c757d !default;
 $gray-900:                #212529 !default;
+$text-muted:              #999;
 
 
 // Body override
@@ -23,6 +24,7 @@ $spacer:                  1rem !default;
 $border-radius:           5px;
 
 // Typography custom
+$allow-shadow:            false;
 $title-shadow:            3px 3px 5px $gray-600;
 
 $blockquote-color:        lighten($gray-900, 15%);
@@ -34,7 +36,7 @@ $code-bg:                 darken( $body-bg, 5% );
 $code-border-radius:      $border-radius;
 
 // Footer custom
-$footer-text-colour:      #999;
+$footer-text-colour:      $text-muted;
 $footer-padding:          2.5rem 0;
 $footer-align:            center;
 $footer-bg:               #f9f9f9;
