@@ -1,0 +1,43 @@
+/*  This custom variables file is a mirror of the boostrat/_variables.scss
+    file. All custom edits should be done from here.
+
+*/
+
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+// Color system override
+$white:                   #fff !default;
+$gray-600:                #6c757d !default;
+$gray-900:                #212529 !default;
+$text-muted:              #999;
+
+
+// Body override
+$body-color:              $gray-900;
+$body-bg:                 $white !default;
+
+// Spacing override
+$spacer:                  1rem !default;
+
+// Spacing custom
+$border-radius:           5px;
+
+// Typography custom
+$allow-shadow:            false;
+$title-shadow:            3px 3px 5px $gray-600;
+
+$blockquote-color:        lighten($gray-900, 15%);
+$blockquote-padding:      $spacer;
+$blockquote-border:       $spacer * 0.25 solid;
+
+// Code custom
+$code-bg:                 darken( $body-bg, 5% );
+$code-border-radius:      $border-radius;
+
+// Footer custom
+$footer-text-colour:      $text-muted;
+$footer-padding:          2.5rem 0;
+$footer-align:            center;
+$footer-bg:               #f9f9f9;
+$footer-border-top:       .05rem solid #e5e5e5;

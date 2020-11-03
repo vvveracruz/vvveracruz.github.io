@@ -1,0 +1,7 @@
+@import "perldoc";
+
+.highlight pre {
+  padding: $spacer;
+  background-color: $code-bg;
+  border-radius: $code-border-radius;
+}

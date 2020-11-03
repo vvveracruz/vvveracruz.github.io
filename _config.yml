@@ -13,11 +13,17 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jemoji
 
 
 # build settings
-
 permalink: /:title
+sass:
+  sass_dir: /assets/css/
 
 markdown: kramdown
 highlighter: rouge
+
+collections:
+  categories:
+    output: true

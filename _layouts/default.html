@@ -1,23 +1,17 @@
 <!doctype html>
-<html>
+<html lang="en" class="h-100">
 
   <head>
+    {% include head.html %}
 
-    {% include basic-head.html %}
-
-    {% include nav.html%}
-
+    <title>{{ page.title }}</title>
   </head>
-  <body>
-
-    <h1 class="page-title">{{ page.title }}</h1>
+  <body data-spy="scroll" data-target="#toc">
 
     {{ content }}
 
+    {% include footer.html %}
+
+    {% include foot-js.html %}
   </body>
-  <footer>
-
-    {% include basic-footer.html %}
-
-  </footer>
 </html>

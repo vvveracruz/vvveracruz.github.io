@@ -1,0 +1,26 @@
+footer {
+  padding:          $footer-padding;
+  color:            $footer-text-colour;
+  text-align:       $footer-align;
+  background-color: $footer-bg;
+  border-top:       $footer-border-top;
+}
+
+blockquote {
+
+  /* blockquotes are defined as a class in bootstrap which is
+    inconvenient for Jekyll purposes.
+
+    Defining custom element here. */
+
+  border-left:      $blockquote-border;
+  color:            $blockquote-color;
+  padding-left:     $blockquote-padding;
+  font-size:        $font-size-sm;
+}
+
+.post-title {
+  @if $allow-shadow {
+    text-shadow:      $title-shadow;
+  }
+}
