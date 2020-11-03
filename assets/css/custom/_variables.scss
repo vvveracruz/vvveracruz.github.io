@@ -3,52 +3,39 @@
 
 */
 
-// --- Imports
+/* Imports */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
 
-// --- Colours custom palette
-$color-cold-fog:          #2f3137;
-$color-pumpkin:           #806000;
-$color-dark-shadow:       #1a1a1a;
-$color-dirty-snow-white:  #f8f8f2;
+// Color system override
+$white:                   #fff !default;
+$gray-600:                #6c757d !default;
+$gray-900:                #212529 !default;
 
-// --- Colours override
-$dark:                    darken($color-cold-fog, 3%);
 
-// --- Spacing override
-$spacer:                  .75rem;
+// Body override
+$body-color:              $gray-900;
+$body-bg:                 $white !default;
 
-// --- Body custom
-$body-max-width:          45em;
-$body-margin:             auto;
-// --- Body override
-$body-color:              $color-dirty-snow-white;
-$body-bg:                 $color-cold-fog;
+// Spacing override
+$spacer:                  1rem !default;
 
-// --- Links override
-$link-color:              $body-color;
-$link-hover-color:        $color-pumpkin;
+// Spacing custom
+$border-radius:           5px;
 
-// --- Links custom:
-$link-body-decoration:    underline;
+// Typography custom
+$title-shadow:            3px 3px 5px $gray-600;
 
-// --- Typography override
-$font-family-sans-serif:  Roboto;
+$blockquote-color:        lighten($gray-900, 15%);
+$blockquote-padding:      $spacer;
+$blockquote-border:       $spacer * 0.25 solid;
 
-$font-weight-bold:        700 !default;
+// Code custom
+$code-bg:                 darken( $body-bg, 5% );
+$code-border-radius:      $border-radius;
 
-$headings-font-weight:    $font-weight-bold;
-$headings-color:          $body-color;
-
-$hr-border-color:         lighten($body-bg, 25%);
-
-// --- Nav custom
-$nav-font:                Work Sans;
-$nav-font-weight:         600;
-
-// --- Code override
-$code-color:              darken($body-color, 15%);
-$pre-color:               darken($body-color, 15%);
-// --- Code custom
-$code-bg:                 $dark;
+// Footer custom
+$footer-text-colour:      #999;
+$footer-padding:          2.5rem 0;
+$footer-align:            center;
+$footer-bg:               #f9f9f9;
+$footer-border-top:       .05rem solid #e5e5e5;

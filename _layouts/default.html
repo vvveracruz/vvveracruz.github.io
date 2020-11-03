@@ -5,13 +5,16 @@
 
     <title>{{ page.title }}</title>
   </head>
-  <body>
-
-    {% include nav.html %}
+  <body data-spy="scroll" data-target="#toc">
 
     {{ content }}
 
     {% include foot-js.html %}
 
   </body>
+  <footer>
+
+    {% include footer.html %}
+
+  </footer>
 </html>

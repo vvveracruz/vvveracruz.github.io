@@ -1,20 +1,13 @@
 ---
 layout: post
 title:  "Bootstrap and Jekyll: a guide for the perplexed"
-date:   2020-10-30 00:00:00 +0100
 category: compsci
 tags: web-dev, html, css, bootstrap, jekyll
-summary: "A not so quick guide on setting up a bootstrap and Jekyll site"
+summary: "A not so quick guide on setting up a bootstrap + Jekyll site."
 repo: https://github.com/vvveracruz/jekyll-bootstrap-example-site
 repo_name: Github repos
 ---
 This tutorial will walk you through how to create and maintain a Jekyll site using Bootstrap. Some of this tutorial is an updated and revised version of [this blog post on experimentingwithcode.com][4], and the rest has been hacked together by me. I am not a web dev expert, so I _will_ explain everything in excruciating detail. If you are, this is going to be too much information. Sorry.
-
-#### Overview
-- [1. Installing things](#1-how-to-jekyll-101)
-- [2. Stylesheets how to](#2-bootstrap-me-some-stylesheets)
-- [3. Javascript how to](#3-javascript)
-- [4. Setting up Jekyll to scale](#4-make-it-jekyll)
 
 ## 1. How to Jekyll 101
 
@@ -48,7 +41,7 @@ If you now navigate to the `test-site` directory you will see something like thi
 └── index.markdown
 ```
 
-> :tada: This is a fully functional Jekyll site.
+> 🎉 This is a fully functional Jekyll site.
 
 In fact, you don't need to use bootstrap at all. If you're just looking to host a nice easy blog this might just be enough for you. Of course if you'd followed [the tutorial I linked to earlier][2] you would know this...
 
@@ -65,7 +58,7 @@ The first command makes sure any dependencies stated in the Gemfile are taken ca
 
 This is all incidental though, because we're getting rid of all of it.
 
-## 2. Bootstrap me some stylesheets
+## 2. Stylesheets
 
 The default jekyll site above has the terrible flaw of being built on a theme, which will interfere with our plan to bootstrap it. So the first thing we need to do is get rid of all references to this theme.
 

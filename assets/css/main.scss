@@ -7,11 +7,10 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
-@import "bootstrap/functions";
-
 @import "custom/variables";
-@import "bootstrap/variables";
 
+@import "bootstrap/functions";
+@import "bootstrap/variables";
 @import "bootstrap/mixins";
 @import "bootstrap/root";
 
@@ -21,8 +20,8 @@
 @import "bootstrap/type";
 @import "bootstrap/images";
 
-@import "custom/code";
 @import "bootstrap/code";
+@import "custom/code";
 
 @import "bootstrap/grid";
 @import "bootstrap/tables";
@@ -33,11 +32,8 @@
 @import "bootstrap/button-group";
 @import "bootstrap/input-group";
 @import "bootstrap/custom-forms";
-
-@import "custom/nav";
 @import "bootstrap/nav";
 @import "bootstrap/navbar";
-
 @import "bootstrap/card";
 @import "bootstrap/breadcrumb";
 @import "bootstrap/pagination";
@@ -56,3 +52,5 @@
 @import "bootstrap/spinners";
 @import "bootstrap/utilities";
 @import "bootstrap/print";
+
+@import "custom/bootstrap-toc"; // must be after bootstrap files

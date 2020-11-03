@@ -1,8 +1,24 @@
-body {
-  max-width: $body-max-width;
-  margin: $body-margin;
+blockquote {
+
+  /* blockquotes are defined as a class in bootstrap which is
+    inconvenient for Jekyll purposes.
+
+    Defining custom element here. */
+
+  border-left:      $blockquote-border;
+  color:            $blockquote-color;
+  padding-left:     $blockquote-padding;
+  font-size:        $font-size-sm;
 }
 
-.post-content a {
-  text-decoration: $link-body-decoration;
+footer {
+  padding:          $footer-padding;
+  color:            $footer-text-colour;
+  text-align:       $footer-align;
+  background-color: $footer-bg;
+  border-top:       $footer-border-top;
+}
+
+.post-title {
+  text-shadow:      $title-shadow;
 }
