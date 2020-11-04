@@ -4,6 +4,11 @@
   }
 }
 
+img.emoji {
+  display: inline !important;
+  margin: inherit !important;
+  width: inherit !important;
+}
 
 .post-content img {
   display:            $post-fig-display;

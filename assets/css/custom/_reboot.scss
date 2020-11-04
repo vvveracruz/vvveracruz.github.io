@@ -16,5 +16,7 @@ blockquote {
   border-left:      $blockquote-border;
   color:            $blockquote-color;
   padding-left:     $blockquote-padding;
+  padding-top:      $blockquote-padding /4;
+  padding-bottom:   $blockquote-padding /4;
   font-size:        $font-size-sm;
 }
