@@ -1,0 +1,11 @@
+.post-title {
+  @if $allow-shadow {
+    text-shadow:      $title-shadow;
+  }
+}
+
+.post-content img {
+  display: block;
+  margin: auto;
+  width: 90%;
+}
