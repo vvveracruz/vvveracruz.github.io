@@ -332,7 +332,7 @@ We now have all the different pieces of the puzzle all together but no way to te
 
 You can put this just above the imported scripts. You should get something like this:
 
-![Disappearing alarm gif](/assets/img/4b1neq.gif)
+![Disappearing alarm gif](/assets/id/{{ page.id }}/img.gif)
 
 Nice. There's a bunch other components like this you can test out with instructions [on their website][16].
 
