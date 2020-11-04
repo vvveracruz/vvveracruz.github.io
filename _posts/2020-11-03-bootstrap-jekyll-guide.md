@@ -156,7 +156,7 @@ We'll also start with a very basic Index file. You can just copy and paste this 
 
 ### Downloading bootstrap source files
 
-> :warning: It is very important that you donwload **source files** and not compiled files. [This link will take you to the right section of getboostrap.com](https://getbootstrap.com/docs/4.5/getting-started/download/#source-files). The heading should say **Source Files** not compiled whatever. You have been warned.
+> 🔴 It is very important that you donwload **source files** and not compiled files. [This link will take you to the right section of getboostrap.com](https://getbootstrap.com/docs/4.5/getting-started/download/#source-files). The heading should say **Source Files** not compiled whatever. You have been warned.
 
 Now, these come in a nice little `.zip` file. When you open it, you will see a lot of things that might be confusing. We only care about the `scss/` directory (for now). You can delete all the others.
 
@@ -223,7 +223,7 @@ Firstly, Jekyll requires that the `main.scss` file has with [front matter][10]. 
 
 Now you can delete `main.scss` and rename `bootstrap.scss` to `main.scss`.
 
-> :warning: It is important this is a `.scss` file and not `.css`.
+> 🔴 It is important this is a `.scss` file and not `.css`.
 
 ### Integration: Jekyll configuration side
 

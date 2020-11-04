@@ -1,14 +1,17 @@
 ---
 layout: post
 title:  "NY Citibike dashboard with SQL and Datastudio"
-date:   2020-10-28 00:00:00 +0100
 category: data
 tags: sql, data
 summary: "A SQL and datastudio project to visualise data from the New York Citibike public data set on Big Query."
-wip: true
 repo: https://datastudio.google.com/reporting/a6fc910f-b100-4ac5-a72b-2fa35880f149
 repo_name: Dashboard
 ---
+
+
+Recently I've been dabbling in SQL a bit. I was recommended [this Udemy course][1] at work which was pretty good, although it can drag on a little bit sometimes. It literally teaches you how to set up a Gmail account, so definitely on the 😱 side of `beginner friendly`.
+
+
 For this project I worked from the public data table `bigquery-public-data.new_york_citibike.citibike_trips`. This table contains a few interesting metrics, about the users, stations and bikes used. We will be looking at:
 - [gender and user type distributions](#citibike-gender)
 - [bike usage](#citibike-bikes)
@@ -121,4 +124,10 @@ order by
 
 Hint: this report is fully interactive. Click `select date range` to customise the view.
 
-<iframe width="750" height="562.5" src="https://datastudio.google.com/embed/reporting/a6fc910f-b100-4ac5-a72b-2fa35880f149/page/SKniB" frameborder="0" style="border:0" allowfullscreen></iframe>
+<div class="embed-responsive embed-responsive-4by3">
+<iframe class="embed-responsive-item" src="https://datastudio.google.com/embed/reporting/a6fc910f-b100-4ac5-a72b-2fa35880f149/page/SKniB"></iframe>
+</div>
+
+> ℹ️  This report is interactive. Click `select date range` to customise the view.
+
+[1]: https://www.udemy.com/course/sql-for-data-science-with-google-big-query "SQL with data science for Google Big Query – Udemy"

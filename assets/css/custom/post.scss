@@ -1,0 +1,18 @@
+.post-title {
+  @if $allow-shadow {
+    text-shadow:      $title-shadow;
+  }
+}
+
+
+.post-content img {
+  display:            $post-fig-display;
+  margin:             $post-fig-margin;
+  width:              $post-fig-width;
+}
+
+.post-content .embed-responsive {
+  display:            $post-fig-display;
+  margin:             $post-fig-margin;
+  width:              $post-fig-width;
+}
