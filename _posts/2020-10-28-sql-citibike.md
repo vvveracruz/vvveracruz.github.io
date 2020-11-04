@@ -158,14 +158,16 @@ order by
 
 ## Results {#citibike-dashboard}
 
-These four queries are imported into Datastudio and brought into the dashboard creator.
+These four queries are imported into Datastudio and brought into the dashboard creator. Here is the result. You can click `select date range` to customise the view.
 
 
 <div class="embed-responsive embed-responsive-4by3">
-<iframe class="embed-responsive-item" src="https://datastudio.google.com/embed/reporting/a6fc910f-b100-4ac5-a72b-2fa35880f149/page/SKniB"></iframe>
+  <iframe class="embed-responsive-item" src="https://datastudio.google.com/embed/reporting/a6fc910f-b100-4ac5-a72b-2fa35880f149/page/SKniB"></iframe>
 </div>
 
-> ℹ️  This report is interactive. Click `select date range` to customise the view.
+> If you aren't able to see the report, it might be because you have the `do not track` setting enabled in Safari, or the Duck Duck Go extension installed. Google doesn't like sharing when they can't track you. [Click here to be taken to the report in datastudio][3].
+
+
 
 ---
 
@@ -173,6 +175,8 @@ These four queries are imported into Datastudio and brought into the dashboard c
 
 - [Udemy course: SQL with data science for Google Big Query][1]
 - [Downloadable historic NY Citibike data][2]
+- [Direct link to the report][3]
 
 [1]: https://www.udemy.com/course/sql-for-data-science-with-google-big-query "SQL with data science for Google Big Query – Udemy"
 [2]: https://s3.amazonaws.com/tripdata/index.html "Downloadable historic NY Citibike data"
+[3]: https://datastudio.google.com/reporting/a6fc910f-b100-4ac5-a72b-2fa35880f149 "Direct link to the report"
