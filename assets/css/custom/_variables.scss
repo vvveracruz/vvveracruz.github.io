@@ -24,8 +24,8 @@ $spacer:                  1rem !default;
 $border-radius:           5px;
 
 // Typography custom
-$allow-shadow:            false;
-$title-shadow:            3px 3px 5px $gray-600;
+$allow-shadow:            true;
+$text-shadow:             1px 1px 5px $gray-600;
 
 $blockquote-color:        lighten($gray-900, 15%);
 $blockquote-padding:      $spacer;

@@ -1,6 +1,6 @@
-.post-title {
+.text-shadow {
   @if $allow-shadow {
-    text-shadow:      $title-shadow;
+    text-shadow:      $text-shadow;
   }
 }
 
