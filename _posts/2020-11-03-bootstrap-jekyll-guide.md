@@ -2,7 +2,7 @@
 layout: post
 title:  "Bootstrap and Jekyll: a guide for the perplexed"
 category: compsci
-tags: web-dev, html, css, bootstrap, jekyll
+tags: web-dev, html, css, bootstrap, jekyll, tutorial
 summary: "A not so quick guide on setting up a bootstrap + Jekyll site."
 repo: https://github.com/vvveracruz/jekyll-bootstrap-example-site
 repo_name: Github repos

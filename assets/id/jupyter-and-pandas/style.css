@@ -1,0 +1,7 @@
+.jumbotron {
+  background: rgb(85,85,207);
+  background: -moz-linear-gradient(164deg, rgba(85,85,207,0.6741071428571428) 21%, rgba(0,255,139,1) 100%);
+background: -webkit-linear-gradient(164deg, rgba(85,85,207,0.6741071428571428) 21%, rgba(0,255,139,1) 100%);
+background: linear-gradient(164deg, rgba(85,85,207,0.6741071428571428) 21%, rgba(0,255,139,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5555cf",endColorstr="#00ff8b",GradientType=1);
+}
