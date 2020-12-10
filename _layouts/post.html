@@ -1,5 +1,6 @@
 ---
 layout: default
+toc: True
 ---
 
 <link rel="stylesheet" href="/assets/id/{{ page.id }}/style.css">
@@ -15,15 +16,23 @@ layout: default
 <div class="container post-content">
   <div class="row row-offcanvas row-offcanvas-right">
 
-    <!-- sidebar, which will move to the top on a small screen -->
-    <div class="col-md-3 d-none d-md-block" id="sidebar">
-      <nav id="toc" data-toggle="toc" class="sticky-top"></nav>
-    </div>
+    {% if page.toc == True %}
+      <!-- sidebar, which will move to the top on a small screen -->
+      <div class="col-md-3 d-none d-md-block" id="sidebar">
+        <nav id="toc" data-toggle="toc" class="sticky-top"></nav>
+      </div>
 
-    <!-- main content area -->
-    <div class="col-xs-12 col-sm-12 col-md-9">
-      {{ content }}
+      <!-- main content area -->
+      <div class="col-xs-12 col-sm-12 col-md-9">
+        {{ content }}
+      </div>
+    {% endif %}
+
+    {% if page.toc != True %}
+    <div>
+        {{ content }}
     </div>
+    {% endif %}
 
   </div>
 </div>
