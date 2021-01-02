@@ -2,7 +2,7 @@
 layout: post
 title:  "Eddington, a true even-flowing time, and God"
 category: philosophy
-tags: theology, philosophy, christianity
+tags: theology, philosophy, christianity, 2021-challenge
 summary: "Why posit a God that does miracles in the world?"
 toc: False
 ---
@@ -21,4 +21,9 @@ Say my pet dies, and I pray to God to bring it back to life. God answers, and my
 
 In what way can we say God did this? **Even if he did.**
 
+---
+
+This post is part of my 2021 writing challange. More on that [here][2].
+
 [1]: https://archive.org/details/mathematicaltheo00eddiuoft "The mathematical theory of Relativity — A. S. Eddington"
+[2]: /2021 "2021 Writing challenge"
