@@ -26,7 +26,7 @@ From what I can tell, this podcast is available on all major streaming platforms
 
 ---
 
-This post is part of my 2021 writing challange. More on that [here][3].
+This post is part of my 2021 writing challenge. More on that [here][3].
 
 [1]: https://www.jodyavirgan.com/political-history-show "This Day Pod website"
 [2]: https://www.pocketcasts.com/](https://www.pocketcasts.com/ "Pocketcasts"
