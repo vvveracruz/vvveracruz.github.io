@@ -7,4 +7,4 @@ layout: cover
 # [Github](https://github.com/vvveracruz)
 # [Instagram](https://instagram.com/vvveracruz)
 # [Twitter](https://twitter.com/vvveracruz)
-# [More]({{site.url}}/home)
+<!-- # [More]({{site.url}}/home) -->
